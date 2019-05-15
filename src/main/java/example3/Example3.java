@@ -1,0 +1,11 @@
+package example3;
+
+public class Example3 {
+    private int a;
+    private int b;
+
+    @Override
+    public int hashCode() {
+        return this.a + this.b + 100;
+    }
+}

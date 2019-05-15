@@ -1,0 +1,5 @@
+
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÌÊÿı
+_squid:S2094"BRemove this empty class, write its code or make it an "interface".(çæÄK8‹éÔà«-
+Isquid:S1481
+"+Remove this unused "result" local variable.(ÔÑÍ8¥ø×à«-

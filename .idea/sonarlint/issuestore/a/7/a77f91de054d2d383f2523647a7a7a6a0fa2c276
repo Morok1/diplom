@@ -1,0 +1,13 @@
+
+‚"squid:ClassVariableVisibilityCheck"MMake d a static final constant or non-public and provide accessors if needed.(êá¿ê8ğÅÖ¼ª-
+Jsquid:S1481",Remove this unused "example" local variable.(ù«›Í8Êè•İª-
+Msquid:S00108")Either remove or fill this block of code.(ÿÜüÈşÿÿÿÿ8õÌ²½ª-
+]squid:HiddenFieldCheck"4Rename "a" which hides the field declared at line 2.(®š‹á8ßÂµ–«-
+Dsquid:S1481	"&Remove this unused "b" local variable.(Øİê±8ßÂµ–«-
+Nsquid:S1481
+"+Remove this unused "point1" local variable.(Œ•æïıÿÿÿÿ8ßÂµ–«-
+Dsquid:S1481"&Remove this unused "a" local variable.(®š‹á8ßÂµ–«-
+‘"squid:ClassVariableVisibilityCheck"WMake classloader a static final constant or non-public and provide accessors if needed.(áñÑşÿÿÿÿ8ğÅÖ¼ª-
+‚"squid:ClassVariableVisibilityCheck"MMake a a static final constant or non-public and provide accessors if needed.(‚ÈÂÉ8ğÅÖ¼ª-
+‚"squid:ClassVariableVisibilityCheck"MMake c a static final constant or non-public and provide accessors if needed.(¥Öí‡8ğÅÖ¼ª-
+‚"squid:ClassVariableVisibilityCheck"MMake b a static final constant or non-public and provide accessors if needed.(“ú»Á8ğÅÖ¼ª-

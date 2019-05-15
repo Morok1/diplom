@@ -1,0 +1,97 @@
+
+^
+.src/main/java/getFieldCheck/getFieldCheck.java,e/4/e4d9320152ac910b28f1a081f8083da6d3360583
+J
+src/main/java/Example.java,a/7/a77f91de054d2d383f2523647a7a7a6a0fa2c276
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+G
+src/main/java/Main.java,e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10
+P
+ src/main/java/MyClassloader.java,8/8/882f7b4658f42db66282496460af256aa48b956d
+f
+6src/main/java/synchronization/MainSynchronization.java,5/2/52c107fe1e2d2f3cd06346aafd6841151380f6a9
+n
+>src/main/java/synchronization/isSynchronizedInterpretator.java,2/9/294651eab1f1c2d7938df2db4d1ff57f56e86630
+g
+7src/main/java/synchronization/MainSynchronization1.java,d/e/de9e3c902ab5aa8914627758925b6120ae4a19bc
+[
++src/main/java/adapters/MyAdviceAdapter.java,7/1/71c94dced388a64781bc6c38970c00872c60251c
+\
+,src/main/java/adapters/MyAnalyzeAdapter.java,c/c/cc814dcd4d11cbcd841185ce2c18dfa6bb2dbaad
+[
++src/main/java/example1/AbstractExample.java,8/4/8488159b524010d06b07ac60b450f842ae04787f
+Q
+!src/main/java/example1/Main1.java,4/1/4112906a9c76e56eede5b10b4e1f4f95d9cd3ee3
+U
+%src/main/java/example2/MyPattern.java,b/1/b1952cb3c9ff41ccc3dc00afc5790dcf28805708
+R
+"src/main/java/example2/Point2.java,b/2/b28872a2e19f9218a6e13ad525e241e6c194ccc4
+R
+"src/main/java/example2/Point1.java,7/3/7379825bf2cf3b82f97982f0b3273af8ffb2c93f
+V
+&src/main/java/example2/Example2_1.java,c/d/cd3c438b85d79146bca5864a30a719cb836eadd1
+V
+&src/main/java/example2/Example2_2.java,f/d/fd167581767ac9709bfec923a4c82b4f722bde17
+V
+&src/main/java/example2/Example2_3.java,6/3/6393ffc9cc96c78e05878faacbece26c4098369f
+[
++src/main/java/example2/MyPatternFabric.java,d/1/d18bc95929f0197ceae22eb597ef0a5e959d5f16
+Q
+!src/main/java/example2/Main2.java,f/5/f561fd8e6e03b608c979210d064e1ca13d5cd3a1
+T
+$src/main/java/example3/Example3.java,f/7/f77f33f917fcf128b062edd9234359d09aed7ad5
+Q
+!src/main/java/example3/Main3.java,a/1/a14762e8f4ae10fadcbac55578b62ae9a9e4fc89
+P
+ src/main/java/example3/Readme.md,a/9/a92e16c5b10ab49c26f3808e474928bab6141765
+Q
+!src/main/java/example4/Main4.java,f/b/fb93fa6455d065583cc8a383af8d2a05a77dc3c2
+T
+$src/main/java/example4/Example4.java,6/6/66658b984b78a30a7804fda5f0f5168fbd139235
+P
+ src/main/java/example4/Readme.md,1/f/1f4744a39395f141f1469b640dc3f6e8c8870f69
+P
+ src/main/java/example5/Main.java,1/9/19bbe66b2666a282bc1915c5516e36068e6706a9
+T
+$src/main/java/example5/Example5.java,d/4/d4ea1c6485c990c17b5c67046d607839580b335b
+P
+ src/main/java/example5/Readme.md,9/b/9be1b3f8a52554e96e72711dfc939de5a5428993
+L
+src/main/java/util/Util.java,f/a/fad78f397e76e32d5ba317a782db1e9e54b1c61f
+Q
+!src/main/java/example6/Main6.java,8/e/8e11152ceaa707b1451377056993b435543507b1
+P
+ src/main/java/example6/Readme.md,e/5/e5e95e01f0dcaaadaa8e0ad76602a929763fd2bf
+T
+$src/main/java/example6/Example6.java,4/f/4ff831e19305cf9777b789591770dc81ec8a7ac5
+P
+ src/main/java/example7/Readme.md,b/c/bcd7f43e10e45f093686a23b2389287e872f2948
+P
+ src/main/java/example8/Readme.md,3/d/3d9529f6de86fd1b8508802703d2391ef594c68e
+P
+ src/main/java/example9/Readme.md,5/6/56613dad964fb41102c7c490fb682a60ee619f31
+Q
+!src/main/java/example10/Readme.md,7/7/775774139a7ea35e0402bb1a63528b430905cf3a
+T
+$src/main/java/example9/Example9.java,1/1/11a16fff65c198f74b129cb478157d457d7e67c2
+T
+$src/main/java/example7/Example7.java,8/3/8392193e5c9fe74e49097b46fada38c6c72c4a8e
+Q
+!src/main/java/example11/Readme.md,d/4/d40db69a824ff2b048ab723f0d939c3df3afde0d
+Q
+!src/main/java/example9/Main9.java,5/3/53386214b9a20cfd0dc081b072796205382abb23
+S
+#src/main/java/example10/Main10.java,f/5/f5c983dbe4da2e70a4c26e47e5199a0b06083e32
+V
+&src/main/java/example10/Example10.java,3/e/3ee491e2207e7172c84cdcf5909a01236940974b
+T
+$src/main/java/example8/Example8.java,f/c/fccf00ca66181f791f14f5be1a0a40d9f4d6fe80
+Q
+!src/main/java/example8/Main8.java,7/3/739b3a1d182c100a824aaff53c2c3e6b004a9339
+Q
+!src/main/java/example7/Main7.java,b/d/bd05bccf669b2930ceb7b96dcea89d30243f20f3
+S
+#src/main/java/example11/Main11.java,a/5/a57f5d2a0cb867123712b4706a72e9d250c3d770
+V
+&src/main/java/example11/Example11.java,b/c/bc27442bdf04e9176137a3449486f34465fddec5

@@ -1,0 +1,4 @@
+
+…squid:S2273"bMove this call to "wait()" into a synchronized block to be sure the monitor on "Example6" is held.(Ý¤ëÄúÿÿÿÿ8æÊÐà«-
+]squid:S2274":Remove this call to "wait" or move it into a "while" loop.(Ý¤ëÄúÿÿÿÿ8æÊÐà«-
+~squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´ú†àúÿÿÿÿ8æÊÐà«-
