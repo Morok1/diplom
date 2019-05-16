@@ -1,5 +1,6 @@
 package example2;
 
+
 public class Example2_2 {
     Point1 point1 = new Point1();
 
