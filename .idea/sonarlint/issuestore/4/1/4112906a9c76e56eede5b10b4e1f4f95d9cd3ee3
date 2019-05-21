@@ -1,8 +1,6 @@
 
-rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(åÕĞÑ
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(á³ÄÁ8Ò¿¯«-
-Nsquid:S1444
-"0Make this "public static isAbstract" field final(ş¢ç8ûàº¯«-
-‹"squid:ClassVariableVisibilityCheck
-"VMake isAbstract a static final constant or non-public and provide accessors if needed.(ş¢ç8ûàº¯«-
+Lsquid:S1444"0Make this "public static isAbstract" field final(ş¢ç8¾¿õ½¬-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(á³ÄÁ8¾¿õ½¬-
+‰"squid:ClassVariableVisibilityCheck"VMake isAbstract a static final constant or non-public and provide accessors if needed.(ş¢ç8¾¿õ½¬-
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(åÕĞÑ8¾¿õ½¬-

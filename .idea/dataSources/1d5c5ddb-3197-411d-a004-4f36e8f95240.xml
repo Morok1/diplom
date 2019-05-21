@@ -79,8 +79,8 @@
     <schema id="18" parent="6" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2019-05-12.13:28:26.303</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1691</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2019-05-16.00:09:12.783</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1819</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -138,14 +138,18 @@
       <ObjectId>26313</ObjectId>
       <StateNumber>1689</StateNumber>
     </table>
-    <column id="27" parent="26" name="name">
+    <table id="27" parent="18" name="demo-small-20170815">
+      <ObjectId>26331</ObjectId>
+      <StateNumber>1819</StateNumber>
+    </table>
+    <column id="28" parent="26" name="name">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1688</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="28" parent="26" name="id">
+    <column id="29" parent="26" name="id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -154,21 +158,27 @@
       <TypeId>23</TypeId>
       <SequenceName>User_id_seq</SequenceName>
     </column>
-    <index id="29" parent="26" name="user_id_pk">
+    <index id="30" parent="26" name="user_id_pk">
       <ObjectId>26323</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="30" parent="26" name="user_id_uindex">
+    <index id="31" parent="26" name="user_id_uindex">
       <ObjectId>26322</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="31" parent="26" name="user_id_pk">
+    <key id="32" parent="26" name="user_id_pk">
       <ObjectId>26324</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>user_id_pk</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
+    <column id="33" parent="27" name="c1">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>1819</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
   </database-model>
 </dataSource>

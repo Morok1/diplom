@@ -1,4 +1,4 @@
 
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ïÁÀÜúÿÿÿÿ
-Isquid:S1481"+Remove this unused "result" local variable.(ÿìòê8ô”ù¸«-
-esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ğ‹‚
+usquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ïÁÀÜúÿÿÿÿ
+Gsquid:S1481"+Remove this unused "result" local variable.(ÿìòê8ô”ù¸«-
+csquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ğ‹‚
