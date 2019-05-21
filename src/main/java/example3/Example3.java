@@ -6,6 +6,6 @@ public class Example3 {
 
     @Override
     public int hashCode() {
-        return this.a + this.b + 100;
+        return super.hashCode();
     }
 }

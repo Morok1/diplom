@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Main7 {
     public static void main(String[] args) throws IOException {
-        List<MethodNode> methodNodes =  Util.getMethodNodes("example7.Example7");
+        List<MethodNode> methodNodes =  Util.getMethodNodes("example7.Example7_1");
         MethodNode methodNode = methodNodes.get(0);
         List<String> fields = getInitializedFields(methodNode);
         //TOdo: Do comparison between all fields and initialized fields

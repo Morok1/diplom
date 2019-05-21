@@ -5,6 +5,7 @@ import lombok.Data;
 import org.springframework.stereotype.Service;
 import to_heroku.model.BugReport;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -18,7 +19,7 @@ public class HashCodeValidator implements Validator {
     private static final String result = "Validated!";
 
     @Override
-    public void validate(Class<?> clazz, Map<String, List<BugReport>> bugReports) {
+    public void validate(Class<?> clazz, Map<String, List<BugReport>> bugReports) throws IOException {
 
         String className = clazz.getCanonicalName();
 

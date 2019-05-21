@@ -1,24 +1,43 @@
 package example3;
 
 import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.tree.*;
+import org.objectweb.asm.tree.AbstractInsnNode;
+import org.objectweb.asm.tree.MethodInsnNode;
+import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.util.Printer;
 import org.objectweb.asm.util.Textifier;
 import org.objectweb.asm.util.TraceMethodVisitor;
 import to_heroku.model.BugReport;
+import to_heroku.service.Validator;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
 
 import static util.Util.getMethodNodes;
 
-public class Main3 {
-    public static void main(String[] args) throws IOException {
-        List<MethodNode> methodNodes = getMethodNodes("example3.Example3");
-        analyseNeedMethod(methodNodes);
+public class HashCodeValidator implements Validator {
+
+
+    @Override
+    public void validate(Class<?> clazz, Map<String, List<BugReport>> bugReports) {
+            String className = clazz.getCanonicalName();
+        try {
+            List<MethodNode> methodNodes = getMethodNodes(className);
+            BugReport bugReport = analyseNeedMethod(methodNodes);
+
+            List<BugReport> bugReportList = bugReports.getOrDefault(className, new ArrayList<>());
+            bugReportList.add(bugReport);
+
+            bugReports.put(className, bugReportList);
+
+        } catch (IOException e) {
+            System.err.println("Exception " + e.getCause());
+        }
     }
 
     public static BugReport analyseNeedMethod(List<MethodNode> methodNodes) {
@@ -69,8 +88,5 @@ public class Main3 {
         System.out.print(sw.toString());
     }
 
-    public static boolean validateOneMissingConstants(MethodNode methodNode) {
-        AbstractInsnNode[] abstractInsnNodes = methodNode.instructions.toArray();
-        return true;
-    }
+
 }
