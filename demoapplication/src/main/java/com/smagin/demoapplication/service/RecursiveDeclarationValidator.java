@@ -1,7 +1,7 @@
-package example4;
+package com.smagin.demoapplication.service;
 
-import to_heroku.model.BugReport;
-import to_heroku.service.Validator;
+
+import com.smagin.demoapplication.model.BugReport;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;
@@ -32,11 +32,11 @@ public class RecursiveDeclarationValidator implements Validator {
             bugReport.setVerdict(validatedVerdict);
         } else {
             bugReport.setVerdict(unvalidatedVerdict);
+            bugReport.setCause("There is some recursive declaration field in number   = " + list.size());
 
         }
 
         addBugReport(bugReports, className, bugReport);
-
     }
 
 

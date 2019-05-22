@@ -1,40 +1,40 @@
 
-[
-squid:S106C"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¿Ààëª-
-Jsquid:S1481"'Remove this unused "cw" local variable.(ÜÑÙ¼ÿÿÿÿÿ8¿Ààëª-
-[
-squid:S106H"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¿Ààëª-
-U
-squid:S106K"9Replace this use of System.out or System.err by a logger.(è¯±]8¿Ààëª-
-[
-squid:S106;"9Replace this use of System.out or System.err by a logger.(î©ø¼üÿÿÿÿ8¿Ààëª-
-V
-squid:S106A"9Replace this use of System.out or System.err by a logger.(Ç¦·8¿Ààëª-
-[
-squid:S106/"9Replace this use of System.out or System.err by a logger.(ûú«úÿÿÿÿ8ê¤Ü–«-
-V
-squid:S1064"9Replace this use of System.out or System.err by a logger.(ş¥‰8ÇÃÙìª-
-[
-squid:S106="9Replace this use of System.out or System.err by a logger.(ÿ–™úÿÿÿÿ8¿Ààëª-
-V
-squid:S106*"9Replace this use of System.out or System.err by a logger.(óô±­8öÊÚ–«-
-V
-squid:S106B"9Replace this use of System.out or System.err by a logger.(×¯Ã®8¿Ààëª-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ8¿Ààëª-
-[
-squid:S1060"9Replace this use of System.out or System.err by a logger.(Î¿êÎşÿÿÿÿ8¢Œİ–«-
-V
-squid:S106<"9Replace this use of System.out or System.err by a logger.(×¯Ã®8¿Ààëª-
-[
-squid:S106>"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¿Ààëª-
-V
-squid:S106L"9Replace this use of System.out or System.err by a logger.(«ÌÁÿ8¿Ààëª-
-V
-squid:S106G"9Replace this use of System.out or System.err by a logger.(×¯Ã®8¿Ààëª-
-V
-squid:S106M"9Replace this use of System.out or System.err by a logger.(¨®“›8¿Ààëª-
-usquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¥Ûƒşùÿÿÿÿ8µ·Õìª-
-W"squid:SwitchLastCaseIsDefaultCheckS""Add a default case to this switch.(¦²“ˆ8„…òëª-
-V
-squid:S106F"9Replace this use of System.out or System.err by a logger.(±İïˆ8¿Ààëª-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(×¯Ã®8¿Ààëª-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(óô±­8öÊÚ–«-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ûú«úÿÿÿÿ8ê¤Ü–«-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(«ÌÁÿ8¿Ààëª-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¿Ààëª-
+Hsquid:S1481"'Remove this unused "cw" local variable.(ÜÑÙ¼ÿÿÿÿÿ8¿Ààëª-
+U"squid:SwitchLastCaseIsDefaultCheck""Add a default case to this switch.(¦²“ˆ8„…òëª-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ç¦·8¿Ààëª-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ8¿Ààëª-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÿ–™úÿÿÿÿ8¿Ààëª-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Î¿êÎşÿÿÿÿ8¢Œİ–«-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¿Ààëª-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(×¯Ã®8¿Ààëª-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ş¥‰8ÇÃÙìª-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(±İïˆ8¿Ààëª-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(î©ø¼üÿÿÿÿ8¿Ààëª-
+S
+squid:S106"9Replace this use of System.out or System.err by a logger.(è¯±]8¿Ààëª-
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(¥Ûƒşùÿÿÿÿ8µ·Õìª-
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8¿Ààëª-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(¨®“›8¿Ààëª-
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(×¯Ã®8¿Ààëª-
