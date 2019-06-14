@@ -1,7 +1,0 @@
-
-usquid:S3973"WUse curly braces or indentation to denote the code conditionally executed by this "if".(×‘Íô8Ž„ÍÛ«-
-Msquid:S1066"/Merge this if statement with the enclosing one.(×‘Íô8Ž„ÍÛ«-
-Psquid:S1135"2Complete the task associated to this TODO comment.(§“¿˜8Ž„ÍÛ«-
-U
-squid:S106"9Replace this use of System.out or System.err by a logger.(×ìËz8Ž„ÍÛ«-
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ò¾×ëÿÿÿÿÿ

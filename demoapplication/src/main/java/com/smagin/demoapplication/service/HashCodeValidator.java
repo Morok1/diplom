@@ -20,7 +20,7 @@ import java.util.function.Predicate;
 import static com.smagin.demoapplication.util.Util.getMethodNodes;
 
 
-public class HashCodeValidator implements Validator {
+public class    HashCodeValidator implements Validator {
 
 
     @Override

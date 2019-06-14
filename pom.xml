@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -7,7 +6,12 @@
 
     <groupId>diplom</groupId>
     <artifactId>diplom</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>testJar</module>
+        <module>research</module>
+    </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
         <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
@@ -18,13 +22,7 @@
             <version>5.0.3</version>
             <!-- <scope>test</scope> -->
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.6</version>
-            <scope>provided</scope>
-        </dependency>
+
 
 
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
@@ -54,82 +52,50 @@
             <version>1.18.8</version>
             <scope>provided</scope>
         </dependency>
-
-
-    </dependencies>
-
-
-    <properties>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
-    </properties>
-    
-</project>
-=======
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.1.5.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-    <groupId>com.test.heroku</groupId>
-    <artifactId>testheroku</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>testheroku</name>
-    <description>Demo project for Spring Boot</description>
-
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
-    <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <artifactId>spring-boot</artifactId>
+            <version>2.1.4.RELEASE</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.1.4.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <version>2.1.4.RELEASE</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.1.6.RELEASE</version>
+            <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.ow2.asm/asm -->
+        <!-- https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-core -->
         <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm</artifactId>
-            <version>5.0.3</version>
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-core</artifactId>
+            <version>1.15</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-generator-annprocess -->
         <dependency>
-            <groupId>org.ow2.asm</groupId>
-            <artifactId>asm-debug-all</artifactId>
-            <version>5.0.3</version>
-            <!-- <scope>test</scope> -->
+            <groupId>org.openjdk.jmh</groupId>
+            <artifactId>jmh-generator-annprocess</artifactId>
+            <version>1.15</version>
         </dependency>
 
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
+    <properties>
+        <maven.compiler.target>1.11</maven.compiler.target>
+        <maven.compiler.source>1.11</maven.compiler.source>
+    </properties>
+    
 </project>
->>>>>>> 1fc0514a7274be3d33e52859c2d30a724d6832ba
+

@@ -31,7 +31,7 @@ public class HelloController {
         return "pong";
     }
 
-    @GetMapping("/validators")
+    @GetMapping("/com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators")
     public String validators(Model model){
         basicValidator.validate(Example0_1.class, map);
         hashCodeValidator.validate(Example3.class, map);

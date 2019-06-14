@@ -50,7 +50,7 @@ public class BasicValidator implements Validator {
         basicValid = !isAbstract && !isEnum && !isInterface && !isAnnotation;
 
         BugReport bugReport = null;
-        String className = clazz.getCanonicalName();
+        String className = clazz.getSimpleName();
 
         if (isAnnotation) {
             bugReport = getReturnBugReport(className, NOT_VALIDATED_BY_BASIC_VALIDATOR, IS_ANNOTATION);

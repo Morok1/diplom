@@ -1,6 +1,0 @@
-
-¶%squid:RedundantThrowsDeclarationCheck"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(§Õºüøÿÿÿÿ8¤¼–«-
-Jsquid:S1481"'Remove this unused "mv" local variable.(·üãşÿÿÿÿ8¤¼–«-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ş¶é„8¤¼–«-
-Jsquid:S1481"'Remove this unused "cw" local variable.(ÜÑÙ¼ÿÿÿÿÿ8¤¼–«-
