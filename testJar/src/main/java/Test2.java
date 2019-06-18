@@ -1,4 +1,5 @@
-public class Test2 {
+public class
+Test2 {
     private Integer a;
     private Integer b;
 

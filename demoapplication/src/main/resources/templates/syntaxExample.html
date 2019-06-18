@@ -187,9 +187,9 @@
             <!--<div class="row">-->
                 <!--<label style="margin-right: 1.5em" for="each"> </label>-->
                 <!--<table style="color: green" id="each">-->
-                    <!--<tr th:each="bugReport: ${example01List}">-->
-                        <!--<td th:text="${bugReport.className}"></td>-->
-                        <!--<td th:text="${bugReport.verdict}"></td>-->
+                    <!--<tr th:each="report: ${example01List}">-->
+                        <!--<td th:text="${report.className}"></td>-->
+                        <!--<td th:text="${report.verdict}"></td>-->
                         <!--&lt;!&ndash;<td th:text="${index}"></td>&ndash;&gt;-->
                     <!--</tr>-->
                 <!--</table>-->
@@ -200,9 +200,9 @@
             <!--<div class="row">-->
                 <!--<label style="margin-right: 1.5em" for="each"></label>-->
                 <!--<table style="color: green" id="each">-->
-                    <!--<tr th:each="bugReport: ${example3List}">-->
-                        <!--<td th:text="${bugReport.className}"></td>-->
-                        <!--<td th:text="${bugReport.verdict}"></td>-->
+                    <!--<tr th:each="report: ${example3List}">-->
+                        <!--<td th:text="${report.className}"></td>-->
+                        <!--<td th:text="${report.verdict}"></td>-->
                         <!--&lt;!&ndash;<td th:text="${index}"></td>&ndash;&gt;-->
                     <!--</tr>-->
                 <!--</table>-->
@@ -213,11 +213,11 @@
         <table>
             <tr th:each="element : ${map}">
                 <table>
-                    <tr th:each="bugReport : ${element.value}">
-                        <td th:text="${bugReport.getClassName()}">Some name</td>
-                        <td th:text="${bugReport.getVerdict()}">Some name</td>
-                        <div th:if="${bugReport.getCause() != null}">
-                            <td th:text="${bugReport.getCause()}" th:bgcolor="red">Some name</td>
+                    <tr th:each="report : ${element.value}">
+                        <td th:text="${report.getClassName()}">Some name</td>
+                        <td th:text="${report.getVerdict()}">Some name</td>
+                        <div th:if="${report.getCause() != null}">
+                            <td th:text="${report.getCause()}" th:bgcolor="red">Some name</td>
                         </div>
                     </tr>
                 </table>
