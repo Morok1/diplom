@@ -13,7 +13,7 @@ public class Example0 {
         ClassNode classNode = getClassNodeByName("newapi.examples.HashCodeExample3");
         List<MethodNode> methodNodes = classNode.methods;
         MethodNode methodNode = methodNodes.stream()
-                .filter(s -> s.name.equals("test")) .findFirst().orElse(null);
+                .filter(s -> s.name.equals("testWait1")) .findFirst().orElse(null);
         boolean result = analyseThisMethod(methodNode);
         System.out.println("Boolean result" + result);
     }

@@ -26,7 +26,7 @@ public class NullValidatorTest {
         //act
         Report report = validator.validate(classNode);
 
-        //test
+        //testWait1
         assertNotNull(report);
 
         assertThat(report.getClassName(), is("newapi/examples/NullExample"));

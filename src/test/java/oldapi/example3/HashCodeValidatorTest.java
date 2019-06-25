@@ -16,7 +16,7 @@
 //    private Map<String, List<Report>> map;
 //
 //    @Before
-//    public void test(){
+//    public void testWait1(){
 //        map = new HashMap<>();
 //        validator = new HashCodeValidator();
 //    }
@@ -25,10 +25,10 @@
 //
 //    @Test
 //    public void validate_expectedNotValid() {
-//        //validate
-//        validator.validate(Example3.class, map);
+//        //validateCheckcastSituationExpect_valideBehaivour
+//        validator.validateCheckcastSituationExpect_valideBehaivour(Example3.class, map);
 //
-//        //test
+//        //testWait1
 //        assertNotNull(map.get(Example3.class.getCanonicalName()));
 //
 //        assertThat(map.get(Example3.class.getCanonicalName())
@@ -37,9 +37,9 @@
 //
 //    @Test
 //    public void validate_expectedValid() {
-//        validator.validate(Example3.class, map);
+//        validator.validateCheckcastSituationExpect_valideBehaivour(Example3.class, map);
 //
-//        //test
+//        //testWait1
 //        assertThat(map.get(Example3.class.getCanonicalName())
 //                .get(0).getVerdict(), is("Not valid!"));
 //

@@ -22,11 +22,11 @@
 //    }
 //
 //    @Test
-//    public void validate() {
+//    public void validateCheckcastSituationExpect_valideBehaivour() {
 //        //act
-//        validator.validate(Example4.class, map);
+//        validator.validateCheckcastSituationExpect_valideBehaivour(Example4.class, map);
 //
-//        //test
+//        //testWait1
 //        assertNotNull(map.get(Example4.class.getCanonicalName()));
 //    }
 //}

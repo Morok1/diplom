@@ -7,9 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demoapplication" />
-        <module name="research" />
         <module name="testJar" />
         <module name="valuetypeanalyzer" />
+      </profile>
+      <profile name="Annotation profile for diplom" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="research" />
       </profile>
     </annotationProcessing>
   </component>

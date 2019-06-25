@@ -1,4 +1,4 @@
-package newapi.validators.abstractvalidator;
+package newapi.validators.synchronizevalidator;
 
 import newapi.model.Report;
 import org.junit.Before;
@@ -6,17 +6,16 @@ import org.junit.Test;
 import org.objectweb.asm.tree.ClassNode;
 
 import static oldapi.util.Util.getClassNodeByName;
-import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
-public class AbstractValidatorTest {
-    private AbstractValidator validator;
+public class SynchronizedValidatorTest {
+    private SynchronizedValidator validator;
     private ClassNode classNode;
 
     @Before
-    public void setUp() throws Exception {
-        validator  =  new AbstractValidator();
-        classNode = getClassNodeByName("newapi.examples.AbstractExample");
+    public void setUp(){
+        validator = new SynchronizedValidator();
+        classNode = getClassNodeByName("newapi.examples.SynchronizedExample");
     }
 
     @Test
@@ -26,7 +25,8 @@ public class AbstractValidatorTest {
 
         //testWait1
         assertNotNull(report);
-        assertThat(report.isResult(), is(true));
+
+
 
     }
 }

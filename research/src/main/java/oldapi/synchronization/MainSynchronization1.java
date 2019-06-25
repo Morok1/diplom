@@ -22,12 +22,12 @@ public class MainSynchronization1 {
         cr.accept(classNode,0);
 
         List<MethodNode> methodNodes = classNode.methods;
-        MethodVisitor mv = classNode.visitMethod(ACC_PUBLIC, "test", "()V", null, null);
+        MethodVisitor mv = classNode.visitMethod(ACC_PUBLIC, "testWait1", "()V", null, null);
         MethodNode methodNode = methodNodes.get(1);
         methodNode.localVariables.stream().map(s->s.name).forEach(System.out::println);
         methodNode.localVariables.stream().map(s->s.name).forEach(System.out::println);
 
-        AnalyzerAdapter analyzerAdapter = new AnalyzerAdapter("string1", ACC_PUBLIC, "test", "()V", methodNode);
+        AnalyzerAdapter analyzerAdapter = new AnalyzerAdapter("string1", ACC_PUBLIC, "testWait1", "()V", methodNode);
 
         System.out.println(analyzerAdapter.stack);
     }

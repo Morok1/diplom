@@ -21,8 +21,8 @@
 //    }
 //
 //    @Test
-//    public void validate() throws IOException {
-//        validator.validate(Example6.class, bugReports);
+//    public void validateCheckcastSituationExpect_valideBehaivour() throws IOException {
+//        validator.validateCheckcastSituationExpect_valideBehaivour(Example6.class, bugReports);
 //        assertNotNull(bugReports);
 //
 //        assertNotNull(bugReports.get(Example6.class.getCanonicalName()));

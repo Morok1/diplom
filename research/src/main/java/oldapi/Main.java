@@ -22,10 +22,10 @@ public class Main {
         cr.accept(classNode,0);
 
         List<MethodNode> methodNodes = classNode.methods;
-        MethodVisitor mv = classNode.visitMethod(Opcodes.ACC_PUBLIC, "test", "()V", null, null);
+        MethodVisitor mv = classNode.visitMethod(Opcodes.ACC_PUBLIC, "testWait1", "()V", null, null);
         MethodNode methodNode = methodNodes.get(0);
 
-        AnalyzerAdapter analyzerAdapter = new AnalyzerAdapter("string1", Opcodes.ACC_PUBLIC, "test", "()V", methodNode);
+        AnalyzerAdapter analyzerAdapter = new AnalyzerAdapter("string1", Opcodes.ACC_PUBLIC, "testWait1", "()V", methodNode);
         System.out.println(analyzerAdapter.stack);
     }
 }

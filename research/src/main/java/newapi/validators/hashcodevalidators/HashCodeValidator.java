@@ -18,13 +18,13 @@ public class HashCodeValidator implements Validator {
 
     @Override
     public Report validate(ClassNode classNode) {
-        boolean isHascCodeWithoutIdentity = Optional.ofNullable(classNode).map(s -> getMethodNodeHashCode(s.methods))
+        boolean isHashCodeWithoutIdentity = Optional.ofNullable(classNode).map(s -> getMethodNodeHashCode(s.methods))
                 .map(this::validateMethodOnHashCodeCondition).orElse(Boolean.FALSE);
 
         List<MethodNode> methodNodes = Optional.ofNullable(classNode).map(s -> s.methods).orElse(new ArrayList<>());
 
         Report report = new Report();
-        report.setResult(isHascCodeWithoutIdentity);
+        report.setResult(isHashCodeWithoutIdentity);
 
         return report;
     }

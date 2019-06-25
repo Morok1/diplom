@@ -26,7 +26,7 @@ public class ToStringValidatorTest {
         //act
         Report report = validator.validate(classNode);
 
-        //test
+        //testWait1
         assertThat(report, is(notNullValue()));
 
         assertThat(report.getClassName(), is("newapi/examples/ToStringExample"));

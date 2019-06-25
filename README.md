@@ -45,7 +45,8 @@ Constant pool:
   #30 = MethodHandle       6:#35          // REF_invokeStatic java/lang/invoke/ValueBootstrapMethods.makeBootstrapMethod:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
   #31 = NameAndType        #9:#36         // hashCode:(QPoint;)I
   #32 = NameAndType        #16:#37        // equals:(QPoint;Ljava/lang/Object;)Z
-  #33 = NameAndType        #20:#38        // toString:(QPoint;)Ljava/lang/String;
+  #33 = NameAndType        #20:#38
+          // toString:(QPoint;)Ljava/lang/String;
   #34 = Utf8               java/lang/Object
   #35 = Methodref          #39.#40        // java/lang/invoke/ValueBootstrapMethods.makeBootstrapMethod:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
   #36 = Utf8               (QPoint;)I

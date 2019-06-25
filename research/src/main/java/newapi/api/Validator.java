@@ -5,7 +5,8 @@ import org.objectweb.asm.tree.ClassNode;
 
 import java.util.Optional;
 
-public interface Validator {
+public interface
+Validator {
     Report validate(ClassNode classNode);
 
 

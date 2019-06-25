@@ -26,7 +26,7 @@ public class CloneFinalizeValidatorTest {
         //act
         Report report = validator.validate(classNode);
 
-        //test
+        //testWait1
         assertNotNull(report);
 
         assertThat(report.getReason(), is(nullValue()));

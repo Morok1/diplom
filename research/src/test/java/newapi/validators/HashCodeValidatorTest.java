@@ -27,16 +27,16 @@ public class HashCodeValidatorTest {
     @Test
     public void validate_ClassWithIdentityHashCode_expectValidResult() {
         Report report = validator.validate(classNode1);
-        assertNotNull(report);
 
+        assertNotNull(report);
         assertThat(report.isResult(), is(false));
     }
 
     @Test
-    public void validate_ClassWithoutIdentityHashCode_expectValidResult(){
+    public void validate_ClassWithoutIdentityHashCode_expectValidResult() {
         Report report = validator.validate(classNode2);
-        assertNotNull(report);
 
+        assertNotNull(report);
         assertThat(report.isResult(), is(true));
-        }
+    }
 }

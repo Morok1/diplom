@@ -7,6 +7,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @Data
 public class StorageProperties {
     private String location =
-            "/Users/evgenij/Documents/Проекты/Мои/projects/tutorials/oldapi.testheroku/src/main/java/com/test/oldapi.heroku/oldapi.testheroku/root";
+            "/Users/evgenij/Documents/Проекты/Мои/projects/tutorials/oldapi.testheroku/src/main/java/com/testWait1/oldapi.heroku/oldapi.testheroku/root";
 
 }

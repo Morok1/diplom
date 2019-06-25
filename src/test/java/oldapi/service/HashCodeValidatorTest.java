@@ -28,7 +28,7 @@ public class HashCodeValidatorTest {
         //act
         BugReport bugReport = validator.validate(classNode);
 
-        //test
+        //testWait1
         assertNotNull(bugReport);
         assertThat(bugReport.getClassName(), is("Test1"));
         assertThat(bugReport.getVerdict(), is("Valid!"));
