@@ -1,4 +1,4 @@
-public class Test2 {
+public class HashCodeIdentity {
     private Integer a;
     private Integer b;
 

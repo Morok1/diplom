@@ -13,8 +13,6 @@ import java.util.List;
 import java.util.Optional;
 
 public class HashCodeValidator implements Validator {
-    private static final String ownerSystem = "java/lang/System";
-    private static final String identityHashCode = "identityHashCode";
 
     @Override
     public Report validate(ClassNode classNode) {
