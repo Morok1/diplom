@@ -15,7 +15,7 @@ public class SynchronizedValidator implements Validator {
     public Report validate(ClassNode classNode) {
         boolean result = classNode.methods.stream()
                 .map(s -> analyseMethod(s, defaultConstructReport(classNode, this)))
-                .allMatch(s -> s.isResult());
+                .allMatch(Report::isResult);
         if(result){
             Report endReport = defaultConstructReport(classNode, this);
 
