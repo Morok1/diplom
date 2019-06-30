@@ -13,4 +13,10 @@ public class ThisExample {
     public void setExample3(Example1 example3) {
         this.example3 = example3;
     }
+
+    public void test(){
+        Example1 example1 = this.example1;
+
+        this.setExample3(example1);
+    }
 }
