@@ -228,7 +228,7 @@ public class ValueTypifier {
             @Override
             public FieldVisitor visitField(int access, String name, String desc, String signature, Object value) {
                 if (REWRITE_VALUETYPE_FIELD) {
-                    boolean internal = (access & (ACC_PROTECTED | ACC_PUBLIC | ACC_STATIC)) == 0;  // FIXME, should rewrite static field
+                    boolean internal = (access & (ACC_PROTECTED | ACC_PUBLIC | ACC_STATIC)) == 0;
 
                     System.out.println("visit field: " + owner + '.' + name + desc + " internal " + internal);
 
