@@ -19,6 +19,7 @@ public class EqualityExample {
     }
 
     public void test2(){
+
         Example2 example3 = new Example2();
         boolean result =  example34 == example3;
     }
