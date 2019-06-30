@@ -21,6 +21,17 @@ import java.util.zip.ZipEntry;
  *
  * */
 public final class Util {
+    public static ClassNode getClassNodeByName(String className){
+        ClassNode classNode = new ClassNode();
+        try {
+            ClassReader cr = new ClassReader(className);
+            ClassWriter cw = new ClassWriter(cr, ClassWriter.COMPUTE_MAXS | ClassWriter.COMPUTE_FRAMES);
+            cr.accept(classNode, 0);
+        } catch (IOException e) {
+            System.out.println("Exception occurs in ClassReader");
+        }
+        return classNode;
+    }
     public static List<MethodNode> getMethodNodes(String name) throws IOException {
         ClassReader cr = new ClassReader(name);
         ClassNode classNode = new ClassNode();
@@ -31,7 +42,7 @@ public final class Util {
         return classNode.methods;
     }
 
-    //    "/Users/evgenij/Documents/Проекты/Мои/projects/diplom/testJar/target/testJar-1.0-SNAPSHOT.jar"
+    //    "/Users/evgenij/Documents/Проекты/Мои/projects/diplom/oldapi.testJar/target/oldapi.testJar-1.0-SNAPSHOT.jar"
     public static ClassNode getClassNodeFromJar(String filePath) {
         ClassNode classNode = null;
         try {

@@ -189,9 +189,9 @@
         <!--<div class="row">-->
         <!--<label style="margin-right: 1.5em" for="each"> </label>-->
         <!--<table style="color: green" id="each">-->
-        <!--<tr th:each="bugReport: ${example01List}">-->
-        <!--<td th:text="${bugReport.className}"></td>-->
-        <!--<td th:text="${bugReport.verdict}"></td>-->
+        <!--<tr th:each="report: ${example01List}">-->
+        <!--<td th:text="${report.className}"></td>-->
+        <!--<td th:text="${report.verdict}"></td>-->
         <!--&lt;!&ndash;<td th:text="${index}"></td>&ndash;&gt;-->
         <!--</tr>-->
         <!--</table>-->
@@ -202,9 +202,9 @@
         <!--<div class="row">-->
         <!--<label style="margin-right: 1.5em" for="each"></label>-->
         <!--<table style="color: green" id="each">-->
-        <!--<tr th:each="bugReport: ${example3List}">-->
-        <!--<td th:text="${bugReport.className}"></td>-->
-        <!--<td th:text="${bugReport.verdict}"></td>-->
+        <!--<tr th:each="report: ${example3List}">-->
+        <!--<td th:text="${report.className}"></td>-->
+        <!--<td th:text="${report.verdict}"></td>-->
         <!--&lt;!&ndash;<td th:text="${index}"></td>&ndash;&gt;-->
         <!--</tr>-->
         <!--</table>-->
@@ -249,14 +249,17 @@
         <!--</button>-->
         <!--</div>-->
         <table>
-            <tr th:each="bugReport:${hashBugReportMap}">
+            <tr th:each="report:${hashBugReportMap}">
                 <table>
                     <tr>
-                        <td th:text="${bugReport.key}">Some name</td>
-                        <td th:text="${bugReport.value.getValidatorName()}">Some name</td>
-                            <div th:if="${bugReport.value.getVerdict()!=false}">
-                                <td th:text="${bugReport.value.getVerdict()}" th:bgcolor="red">Some name</td>
+                        <td th:text="${report.key}">Some name</td>
+
+                        <td th:text="${report.value.getValidatorName()}">Some name</td>
+                        <div th:if="${report.value.isResult() !=false}">
+                                <td th:text="${report.value.getClassName()} + can't be changed by value type bytecodes'" th:bgcolor="red">Some name</td>
                             </div>
+                        <td th:text="${report.value.getReason()}">Some id</td>
+
                     </tr>
                 </table>
             </tr>
