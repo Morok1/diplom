@@ -1,6 +1,7 @@
 package newapi.examples;
 
 import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.Type;
 import org.objectweb.asm.tree.*;
 
 import java.util.List;
@@ -14,6 +15,7 @@ public class Example0 {
         List<MethodNode> methodNodes = classNode.methods;
         MethodNode methodNode = methodNodes.stream()
                 .filter(s -> s.name.equals("testWait1")) .findFirst().orElse(null);
+//        String s =  Type.getInternalName(HashCodeExample2.class);
         boolean result = analyseThisMethod(methodNode);
         System.out.println("Boolean result" + result);
     }

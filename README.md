@@ -135,18 +135,13 @@ Constant pool:
             0      13     0     x   I
             4       9     1 $value   QPoint;
 }
+
 SourceFile: "Point.java"
 InnerClasses:
   public static final #44= #43 of #47;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
 BootstrapMethods:
   0: #30 REF_invokeStatic java/lang/invoke/ValueBootstrapMethods.makeBootstrapMethod:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
     Method arguments:
-
-C:\Users\user\Documents\GitHub\valhalla1\target\classes>
-
-
-
-
 
 
 Classfile /C:/Users/user/Documents/GitHub/valhalla1/target/classes/Point.class
