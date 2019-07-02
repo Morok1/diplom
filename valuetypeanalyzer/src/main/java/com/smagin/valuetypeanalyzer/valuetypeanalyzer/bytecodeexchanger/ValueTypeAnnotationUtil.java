@@ -14,6 +14,10 @@ import static org.objectweb.asm.Opcodes.ACC_PROTECTED;
 import static org.objectweb.asm.Opcodes.ACC_PUBLIC;
 
 class ValueTypeAnnotationUtil {
+  /**
+   * Util class which contains information.
+   *
+   */
   static class Info {
     final boolean valueCapable;
     final Set<String> internals;
@@ -24,12 +28,24 @@ class ValueTypeAnnotationUtil {
     }
   }
 
+
+  /**
+   * Method join method name and desctiptor.
+   *
+   */
   static String mangle(String method, String descriptor) {
     return method + descriptor;
   }
-
+  /**
+   * Bytecode descriptor about annotation.
+   *
+   */
   static final String VALUE_CAPABLE_CLASS_NAME = 'L' + ValueCapableClass.class.getName().replace('.', '/') + ';';
 
+  /**
+   * Cache is storage which contains infromation about class.
+   *
+   */
   private final HashMap<String, Info> cache = new HashMap<>();
   private final Function<String, Optional<InputStream>> classFileFinder;
 
@@ -37,18 +53,34 @@ class ValueTypeAnnotationUtil {
     this.classFileFinder = Objects.requireNonNull(classFileFinder);
   }
 
+  /**
+   * Method return info about class or compute info about class.
+   *
+   */
   private Info getInfo(String className) {
     return cache.computeIfAbsent(className, this::analyzeClass);
   }
 
+  /**
+   * Method get information about class that describe this class is ValueCapableClass.
+   *
+   */
   public boolean isAValueCapableClass(String className) {
     return getInfo(className).valueCapable;
   }
 
+  /**
+   * Method return info about internals.
+   *
+   */
   public boolean isInternal(String className, String member, String descriptor) {
     return getInfo(className).internals.contains(mangle(member, descriptor));
   }
 
+  /**
+   * Method which analyze class, contains ClassVisitor.
+   *
+   */
   private Info analyzeClass(String className) {
     Optional<InputStream> classFileInputStream = classFileFinder.apply(className);
     if (!classFileInputStream.isPresent()) {
@@ -75,7 +107,6 @@ class ValueTypeAnnotationUtil {
         }
 
         @Override
-
         public MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
           checkAndAddInternalMember(access, name, desc);
           return null;
