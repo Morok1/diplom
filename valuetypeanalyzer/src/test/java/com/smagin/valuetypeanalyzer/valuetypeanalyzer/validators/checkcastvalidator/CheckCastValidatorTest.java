@@ -7,14 +7,15 @@ import org.objectweb.asm.tree.ClassNode;
 
 import static com.smagin.valuetypeanalyzer.valuetypeanalyzer.util.Util.getClassNodeByName;
 import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertThat;
 
 public class CheckCastValidatorTest {
     private CheckCastValidator validator;
     private ClassNode classNode;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         validator = new CheckCastValidator();
         classNode = getClassNodeByName("com.smagin.valuetypeanalyzer.valuetypeanalyzer.example.Example2");
     }
@@ -29,6 +30,16 @@ public class CheckCastValidatorTest {
 
         assertThat(report.getClassName(), is("com/smagin/valuetypeanalyzer/valuetypeanalyzer/example/Example2"));
         assertThat(report.getReason(), is("Class has checkCast"));
+
+    }
+
+    @Test
+    public void validateWithReturnReport_expectedValidBehaviour() {
+        //act
+        Report report = validator.validate(classNode);
+
+        //test
+        assertNotNull(report);
 
     }
 

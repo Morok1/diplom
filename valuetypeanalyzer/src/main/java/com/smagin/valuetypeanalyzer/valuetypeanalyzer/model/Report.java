@@ -2,6 +2,8 @@ package com.smagin.valuetypeanalyzer.valuetypeanalyzer.model;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class Report {
 
@@ -25,4 +27,9 @@ public class Report {
      *
      */
     private String reason;
+
+    /**
+     * ShortReport for class who contains some classes for this methods.
+     */
+    private List<ShortReport> shortReports;
 }
