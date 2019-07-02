@@ -12,28 +12,25 @@ import static newapi.util.ConstantUtil.VALIDATED;
 import static oldapi.util.Util.getClassNodeByName;
 
 public class CheckcastExample {
-    public static void main(String[] args) {
-        ClassNode classNode = getClassNodeByName("newapi.examples.Example2");
-        Report report = new Report();
-
-        analyseMethod(classNode.methods.get(1), report);
-
-        classNode.methods.stream().map(s -> s.name).forEach(System.out::println);
-
+    public void test1(){
+        Example1 example1 = new Example1();
     }
 
-    public static Report analyseMethod(MethodNode methodNode, Report report){
-        AbstractInsnNode[] nodes = methodNode.instructions.toArray();
-
-        for (int i = 0; i < nodes.length; i++) {
-            if (nodes[i].getOpcode() == Opcodes.CHECKCAST) {
-                report.setClassName(((TypeInsnNode) nodes[i]).desc);
-                report.setResult(UNVALIDATED);
-                return report;
-            }
-        }
-        report.setResult(VALIDATED);
-
-        return report;
+    public void test2(){
+        Test1 test1  = new Test1();
+        Test2  test2 = (Test2) test1;
     }
+
+    public void test3(){
+        Test3 test3 = new Test3();
+        Test4 test4 = (Test4) test3;
+    }
+
+    public void test4(){}
+
+    public class Test1{}
+    public class Test2 extends Test1{}
+
+    public class Test3{}
+    public class Test4 extends Test3{}
 }

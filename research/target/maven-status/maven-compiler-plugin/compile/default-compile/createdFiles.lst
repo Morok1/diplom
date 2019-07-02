@@ -29,7 +29,6 @@ newapi/examples/HashCodeExample2.class
 oldapi/cachesize/Sums.class
 typefier/ValueTypifier$Patch.class
 newapi/examples/CheckcastExample.class
-newapi/model/EqualsExamle.class
 newapi/examples/SynchronizedExample.class
 oldapi/Example$Point.class
 oldapi/example2/forpresentation/Example2$Point1.class
@@ -141,6 +140,7 @@ oldapi/example6/Example6.class
 oldapi/testheroku/example2/Example2_1.class
 newapi/examples/AbstractExample.class
 typefier/ValueTypifier$2$1$2.class
+newapi/model/ShortReport.class
 oldapi/example2/Point2.class
 oldapi/example2/Example2_1$Point2.class
 oldapi/example3/Example3.class
