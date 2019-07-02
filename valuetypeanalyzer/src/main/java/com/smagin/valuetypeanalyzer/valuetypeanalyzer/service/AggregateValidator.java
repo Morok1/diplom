@@ -18,18 +18,21 @@ public class AggregateValidator {
     private AbstractValidator  abstractValidator;
     private AnnotationValidator annotationValidator;
     private CloneFinalizeValidator cloneFinalizeValidator;
+    private InterfaceValidator interfaceValidator;
 
     @Autowired
     public AggregateValidator(FinalValidator finalValidator,
                               HashCodeValidator hashCodeValidator,
                               AbstractValidator abstractValidator,
                               AnnotationValidator annotationValidator,
-                              CloneFinalizeValidator cloneFinalizeValidator) {
+                              CloneFinalizeValidator cloneFinalizeValidator,
+                              InterfaceValidator interfaceValidator) {
         this.finalValidator = finalValidator;
         this.hashCodeValidator = hashCodeValidator;
         this.abstractValidator = abstractValidator;
         this.annotationValidator = annotationValidator;
         this.cloneFinalizeValidator = cloneFinalizeValidator;
+        this.interfaceValidator = interfaceValidator;
     }
 
     public void validate(List<ClassNode> classNodes, Map<String, Map<String, Report>> map){
@@ -43,6 +46,7 @@ public class AggregateValidator {
         addToMapResultOfvalidation(classNode, classNodeNameValidatorNameReportMap, abstractValidator);
         addToMapResultOfvalidation(classNode, classNodeNameValidatorNameReportMap, annotationValidator);
         addToMapResultOfvalidation(classNode, classNodeNameValidatorNameReportMap, cloneFinalizeValidator);
+        addToMapResultOfvalidation(classNode, classNodeNameValidatorNameReportMap, interfaceValidator);
     }
 
     private void addToMapResultOfvalidation(ClassNode classNode, Map<String, Map<String, Report>> map, Validator validator) {

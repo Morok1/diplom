@@ -10,6 +10,7 @@ import org.objectweb.asm.tree.VarInsnNode;
 import org.springframework.stereotype.Component;
 
 import static newapi.util.ConstantUtil.UNVALIDATED;
+
 @Component
 public class SynchronizedValidator implements Validator {
     @Override
