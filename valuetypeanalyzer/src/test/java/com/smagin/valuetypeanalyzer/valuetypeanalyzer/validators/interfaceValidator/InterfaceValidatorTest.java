@@ -1,6 +1,7 @@
 package com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.interfaceValidator;
 
 import com.smagin.valuetypeanalyzer.valuetypeanalyzer.model.Report;
+import com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.InterfaceValidator;
 import org.junit.Before;
 import org.junit.Test;
 import org.objectweb.asm.tree.ClassNode;
