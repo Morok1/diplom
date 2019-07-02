@@ -1,0 +1,12 @@
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/nullValidator/NullValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/synchronizevalidator/SynchronizedValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/supervalidator/SuperValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/annotationvalidator/AnnotationValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/toStringValidator/ToStringValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/cloneValidator/CloneFinalizeValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/SystemIdentityHashCodeValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/finalValidators/FinalValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/abstractvalidator/AbstractValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/HashCodeValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/generictypevalidator/CheckcastValidatorTest.java
+/Users/evgenij/Documents/Проекты/Мои/projects/diplom/research/src/test/java/newapi/validators/interfaceValidator/InterfaceValidatorTest.java

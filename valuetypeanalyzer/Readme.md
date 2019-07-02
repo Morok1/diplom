@@ -1,0 +1,1 @@
+1 делаю конвертацию Map<String, Map<String, BugReport>> to Map<String, BugReport>

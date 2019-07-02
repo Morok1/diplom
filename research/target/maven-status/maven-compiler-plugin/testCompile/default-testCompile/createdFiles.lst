@@ -1,0 +1,12 @@
+newapi/validators/generictypevalidator/CheckcastValidatorTest.class
+newapi/validators/interfaceValidator/InterfaceValidatorTest.class
+newapi/validators/finalValidators/FinalValidatorTest.class
+newapi/validators/HashCodeValidatorTest.class
+newapi/validators/synchronizevalidator/SynchronizedValidatorTest.class
+newapi/validators/abstractvalidator/AbstractValidatorTest.class
+newapi/validators/toStringValidator/ToStringValidatorTest.class
+newapi/validators/supervalidator/SuperValidatorTest.class
+newapi/validators/annotationvalidator/AnnotationValidatorTest.class
+newapi/validators/nullValidator/NullValidatorTest.class
+newapi/validators/cloneValidator/CloneFinalizeValidatorTest.class
+newapi/validators/SystemIdentityHashCodeValidatorTest.class
