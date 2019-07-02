@@ -1,6 +1,7 @@
 package com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.finalValidators;
 
-import newapi.model.Report;
+import com.smagin.valuetypeanalyzer.valuetypeanalyzer.model.Report;
+import com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.FinalValidator;
 import org.junit.Before;
 import org.junit.Test;
 import org.objectweb.asm.tree.ClassNode;

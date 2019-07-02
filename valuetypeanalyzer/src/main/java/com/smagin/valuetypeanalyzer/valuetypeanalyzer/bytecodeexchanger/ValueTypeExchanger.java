@@ -52,10 +52,6 @@ public class ValueTypeExchanger {
         return ";Q" + type.getInternalName() + "$Value;";
     }
 
-    static String toArrayOfValueInternalName(Type type) {
-        return "[Q" + type.getInternalName() + "$Value;";
-    }
-
     private static class VTValue extends BasicValue {
         final Set<AbstractInsnNode> sources;
 
