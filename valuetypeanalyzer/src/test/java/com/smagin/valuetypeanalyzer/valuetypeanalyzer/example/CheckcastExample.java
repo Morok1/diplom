@@ -1,16 +1,5 @@
 package com.smagin.valuetypeanalyzer.valuetypeanalyzer.example;
 
-import newapi.model.Report;
-import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.tree.AbstractInsnNode;
-import org.objectweb.asm.tree.ClassNode;
-import org.objectweb.asm.tree.MethodNode;
-import org.objectweb.asm.tree.TypeInsnNode;
-
-import static newapi.util.ConstantUtil.UNVALIDATED;
-import static newapi.util.ConstantUtil.VALIDATED;
-import static oldapi.util.Util.getClassNodeByName;
-
 public class CheckcastExample {
     public void test1(){
         Example1 example1 = new Example1();

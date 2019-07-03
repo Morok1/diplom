@@ -31,6 +31,7 @@ public class CheckCastValidatorTest {
         //test
         assertNotNull(report);
 
+
         assertThat(report.getClassName(), is("com/smagin/valuetypeanalyzer/valuetypeanalyzer/example/Example2"));
 
     }
@@ -45,6 +46,10 @@ public class CheckCastValidatorTest {
 
         assertThat(report.getShortReports(), is(notNullValue()));
         assertThat(report.getShortReports().size(),
+                is(2));
+        assertThat(report.getShortReports().get(0).getClassName(),
                 is("com/smagin/valuetypeanalyzer/valuetypeanalyzer/example/CheckcastExample$Test2"));
+
+        assertThat(report.isResult(), is(true));
     }
 }

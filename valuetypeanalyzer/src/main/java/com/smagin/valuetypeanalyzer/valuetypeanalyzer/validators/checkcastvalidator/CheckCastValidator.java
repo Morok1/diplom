@@ -18,6 +18,8 @@ import java.util.stream.Collectors;
  * Application of this class should be recognized!
  * When we analyze class we check some boolean criteria which refer to this class,
  * but in this case CheckCast can be refer to other class.
+ *
+ * Set result default true.
  */
 
 @Component
@@ -36,6 +38,7 @@ public class CheckCastValidator implements Validator {
              report.setShortReports(shortReports);
         }
 
+        report.setResult(true);
         return report;
     }
 

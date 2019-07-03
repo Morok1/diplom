@@ -49,7 +49,7 @@ public class EqualityValidator implements Validator {
      * @param methodNode which contains
      * @return shortReport
      */
-    public List<ShortReport> analyseMethodIOnFirstPattern(MethodNode methodNode) {
+    private List<ShortReport> analyseMethodIOnFirstPattern(MethodNode methodNode) {
         List<ShortReport> reports = new ArrayList<>();
         AbstractInsnNode[] nodes = methodNode.instructions.toArray();
         for (int i = 0; i < nodes.length; i++) {
