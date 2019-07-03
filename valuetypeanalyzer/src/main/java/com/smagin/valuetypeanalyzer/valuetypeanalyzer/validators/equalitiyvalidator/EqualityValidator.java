@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-
 /**
  * Equality validator. Consider two cases:
  * 1) when object defined as local variables
@@ -35,11 +34,12 @@ public class EqualityValidator implements Validator {
                 .map(this::analyseMethodIOnFirstPattern).flatMap(List::stream)
                 .collect(Collectors.toList());
 
-        report.setShortReports(shortReports);
+        if (!shortReports.isEmpty()) {
+            report.setShortReports(shortReports);
+        }
 
         return report;
     }
-
 
 
     /**
@@ -68,11 +68,10 @@ public class EqualityValidator implements Validator {
                 LocalVariableNode lvn = methodNode.localVariables.get(varInsnNode.var);
                 reports.add(buildShortReport(lvn.desc));
             }
-            return reports;
+
         }
         return reports;
     }
-
 
 
 }
