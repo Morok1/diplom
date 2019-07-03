@@ -64,6 +64,6 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="newapi.validators.HashCodeValidatorTest" name="validate_ClassWithIdentityHashCode_expectValidResult" time="0.012"/>
-  <testcase classname="newapi.validators.HashCodeValidatorTest" name="validate_ClassWithoutIdentityHashCode_expectValidResult" time="0.001"/>
+  <testcase classname="newapi.validators.HashCodeValidatorTest" name="validate_ClassWithIdentityHashCode_expectValidResult" time="0.011"/>
+  <testcase classname="newapi.validators.HashCodeValidatorTest" name="validate_ClassWithoutIdentityHashCode_expectValidResult" time="0.002"/>
 </testsuite>

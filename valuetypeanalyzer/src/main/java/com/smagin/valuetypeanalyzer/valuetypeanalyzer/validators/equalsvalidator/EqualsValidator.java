@@ -14,18 +14,19 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class EqualsValidator implements Validator {
+
     private static final String OWNER_OBJECT = "java/lang/Object";
     private static final String NAME_EQUALS = "equals";
 
     public Report validate(ClassNode classNode) {
         Report report = defaultConstructReport(classNode, this);
 
-        boolean hasEqualsObject = classNode.methods
+        boolean notEqualsObject = classNode.methods
                 .stream().allMatch(EqualsValidator::analyseMethodOnEquals);
 
-        report.setResult(!hasEqualsObject);
+        report.setResult(!notEqualsObject);
 
-        if (hasEqualsObject) {
+        if (!notEqualsObject) {
             report.setReason("This class contains equals with identity!");
         }
 
