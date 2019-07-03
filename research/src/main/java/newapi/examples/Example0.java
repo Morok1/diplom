@@ -11,8 +11,9 @@ import static oldapi.util.Util.getClassNodeByName;
 
 public class Example0 {
     public static void main(String[] args) {
-        ClassNode classNode = getClassNodeByName("newapi.examples.HashCodeExample3");
+        ClassNode classNode = getClassNodeByName("newapi.examples.EqualsExample");
         List<MethodNode> methodNodes = classNode.methods;
+        AbstractInsnNode[] aiNodes = methodNodes.get(1).instructions.toArray();
         MethodNode methodNode = methodNodes.stream()
                 .filter(s -> s.name.equals("testWait1")) .findFirst().orElse(null);
 //        String s =  Type.getInternalName(HashCodeExample2.class);

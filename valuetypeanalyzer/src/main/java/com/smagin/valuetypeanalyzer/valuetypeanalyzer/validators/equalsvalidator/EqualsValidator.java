@@ -3,27 +3,29 @@ package com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.equalsvalidato
 import com.smagin.valuetypeanalyzer.valuetypeanalyzer.model.Report;
 import com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.api.Validator;
 import org.objectweb.asm.Opcodes;
-import org.objectweb.asm.tree.*;
+import org.objectweb.asm.tree.AbstractInsnNode;
+import org.objectweb.asm.tree.ClassNode;
+import org.objectweb.asm.tree.MethodInsnNode;
+import org.objectweb.asm.tree.MethodNode;
 import org.springframework.stereotype.Component;
 
 /**
  * This validator check of equals situations.
- *
  */
-
-
 @Component
 public class EqualsValidator implements Validator {
-    private static final String object = "(Ljava/lang/Object;)Z";
+    private static final String OWNER_OBJECT = "java/lang/Object";
+    private static final String NAME_EQUALS = "equals";
 
     public Report validate(ClassNode classNode) {
         Report report = defaultConstructReport(classNode, this);
 
-        boolean isOwnerObject = classNode.methods
+        boolean hasEqualsObject = classNode.methods
                 .stream().allMatch(EqualsValidator::analyseMethodOnEquals);
-        report.setResult(isOwnerObject);
 
-        if (isOwnerObject) {
+        report.setResult(!hasEqualsObject);
+
+        if (hasEqualsObject) {
             report.setReason("This class contains equals with identity!");
         }
 
@@ -31,17 +33,23 @@ public class EqualsValidator implements Validator {
     }
 
     /**
-     * This method check bytecode on equals.
+     * This method check bytecode on equals which delegate.
+     *
      * @return true if equals with identity is missing
      * This statement !owner.equals(object) refer to this situation.
      */
-
     private static boolean analyseMethodOnEquals(MethodNode methodNode) {
         AbstractInsnNode[] nodes = methodNode.instructions.toArray();
         for (int i = 0; i < nodes.length; i++) {
             if (nodes[i].getOpcode() == Opcodes.INVOKESPECIAL) {
-                String owner = ((MethodInsnNode) nodes[i]).owner;
-                return !owner.equals(object);
+                MethodInsnNode insnNode = ((MethodInsnNode) nodes[i]);
+
+                String owner = insnNode.owner;
+                String name = insnNode.name;
+
+                if (OWNER_OBJECT.equals(owner) && NAME_EQUALS.equals(name)) {
+                    return false;
+                }
             }
         }
         return true;

@@ -19,6 +19,7 @@ public class EqualsValidatorTest {
         classNode = getClassNodeByName("com.smagin.valuetypeanalyzer.valuetypeanalyzer.example.EqualsExample");
     }
 
+
     @Test
     public void validate() {
         Report report = equalsValidator.validate(classNode);
