@@ -37,7 +37,6 @@ public class EqualityValidator implements Validator {
         if (!shortReports.isEmpty()) {
             report.setShortReports(shortReports);
         }
-
         return report;
     }
 

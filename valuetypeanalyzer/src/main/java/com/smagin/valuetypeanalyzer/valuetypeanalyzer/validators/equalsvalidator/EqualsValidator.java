@@ -6,14 +6,21 @@ import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.*;
 import org.springframework.stereotype.Component;
 
+/**
+ * This validator check of equals situations.
+ *
+ */
+
+
 @Component
 public class EqualsValidator implements Validator {
     private static final String object = "(Ljava/lang/Object;)Z";
 
     public Report validate(ClassNode classNode) {
         Report report = defaultConstructReport(classNode, this);
-        boolean isOwnerObject = classNode.methods.stream().allMatch(EqualsValidator::analyseMethodOnEquals);
 
+        boolean isOwnerObject = classNode.methods
+                .stream().allMatch(EqualsValidator::analyseMethodOnEquals);
         report.setResult(isOwnerObject);
 
         if (isOwnerObject) {
@@ -25,7 +32,7 @@ public class EqualsValidator implements Validator {
 
     /**
      * This method check bytecode on equals.
-     * @Return true if equals with identity is missing
+     * @return true if equals with identity is missing
      * This statement !owner.equals(object) refer to this situation.
      */
 
