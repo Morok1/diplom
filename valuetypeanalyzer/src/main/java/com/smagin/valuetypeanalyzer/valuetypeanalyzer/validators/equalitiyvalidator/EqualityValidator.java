@@ -51,7 +51,7 @@ public class EqualityValidator implements Validator {
     private List<ShortReport> analyseMethodIOnFirstPattern(MethodNode methodNode) {
         List<ShortReport> reports = new ArrayList<>();
         AbstractInsnNode[] nodes = methodNode.instructions.toArray();
-        for (int i = 0; i < nodes.length; i++) {
+        for (int i = 1; i < nodes.length; i++) {
             if ((nodes[i].getOpcode() == Opcodes.IF_ACMPEQ ||
                     nodes[i].getOpcode() == Opcodes.IF_ACMPNE)
                     && nodes[i - 1].getOpcode() == Opcodes.GETFIELD) {
@@ -60,7 +60,7 @@ public class EqualityValidator implements Validator {
             }
 
             if ((nodes[i].getOpcode() == Opcodes.IF_ACMPEQ
-                    && nodes[i].getOpcode() == Opcodes.IF_ACMPNE)
+                    || nodes[i].getOpcode() == Opcodes.IF_ACMPNE)
                     && nodes[i - 1].getOpcode() == Opcodes.ALOAD) {
                 VarInsnNode varInsnNode = (VarInsnNode) nodes[i - 1];
 

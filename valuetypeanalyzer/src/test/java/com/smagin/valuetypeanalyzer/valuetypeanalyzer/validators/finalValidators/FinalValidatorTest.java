@@ -28,7 +28,7 @@ public class FinalValidatorTest {
 
         assertNotNull(report);
         assertThat(report.getReason(), is(nullValue()));
-        assertThat(report.getValidatorName(), is("com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.finalValidators.FinalValidator"));
+        assertThat(report.getValidatorName(), is("com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.FinalValidator"));
         assertThat(report.getClassName(), is("com/smagin/valuetypeanalyzer/valuetypeanalyzer/example/HashCodeExample"));
     }
 

@@ -8,6 +8,7 @@ import com.smagin.valuetypeanalyzer.valuetypeanalyzer.model.Report;
 
 import static com.smagin.valuetypeanalyzer.valuetypeanalyzer.util.Util.getClassNodeByName;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.nullValue;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
@@ -29,7 +30,7 @@ public class CheckcastValidatorTest {
         //testWait1
         assertNotNull(report);
 
-        assertThat(report.isResult(), is(false));
-        assertThat(report.getReason(), is("Class has checkCast"));
+        assertThat(report.isResult(), is(true));
+        assertThat(report.getReason(), is(nullValue()));
     }
 }
