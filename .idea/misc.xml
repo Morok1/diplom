@@ -8,6 +8,9 @@
     <option name="dpjConfigurationName" value="misc" />
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/valuetypeanalyzer" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
