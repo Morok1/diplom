@@ -23,5 +23,6 @@ public class Chain {
         validatorNew.validate(classNodes, generalMap);
         Map<String, Report> map = UtilConverter.convertToMapString(generalMap);
         return map;
+
     }
 }

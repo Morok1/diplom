@@ -53,8 +53,6 @@ O
 jvaluetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/config/ThymeleafConfig.java,a/e/ae84e0f79f684a0043f88fab83b828e21f4a25f3
 £
 svaluetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/controllers/ValidatorController.java,d/d/dd54955d502bc62c584f5ca785525fb48a3af97f
-¥
-uvaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/ValuetypeanalyzerApplicationTests.java,3/7/373be42d9c934865da1676063f4b15463d83a65b
 Ž
 ^valuetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/util/UtilT.java,4/1/4126f61ee190f0ce8b5bcfb91da067cbddf0448e
 K
@@ -403,8 +401,6 @@ k
 ;research/src/main/java/newapi/examples/SyncronizedMain.java,9/d/9d17257c50345a14df18493e881694788ce3a25f
 Œ
 \research/src/test/java/newapi/validators/synchronizevalidator/SynchronizedValidatorTest.java,d/9/d9bbf9bc49495731ffdc5be6beec724538b317f4
-e
-5research/src/main/java/newapi/model/EqualsExamle.java,b/c/bc8bf246850521bee159a08afef1cf7a1431a530
 m
 =research/src/main/java/newapi/examples/WaitNotifyExample.java,a/e/ae8f3ba9a5d077f43aa94f04fcc928580b532f72
 g
@@ -441,8 +437,6 @@ nvaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/
 lvaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/example/HashCodeExample2.java,a/c/ac95c1ba025920c18c17f48a7025c267b8b980d0
 ›
 kvaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/example/HashCodeExample.java,e/f/ef6db8502d6e4a028fe07d8b0d2ceeaf817c159f
-¥
-uvaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/ValuetypeAnalyzerApplicationTests.java,5/3/533e15b33ad5cc970a2121c3a1940091db3e95d2
 X
 (testJar/src/main/java/AbstractClass.java,8/1/812304911b577f4d585c100f20d882f797cbfaf5
 U
@@ -489,8 +483,6 @@ lvaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/
 dvaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/example/Example2.java,a/c/ac98d21cb5e612c3f97271d6e5366175630dad4d
 ¤
 tvaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/validators/HashCodeValidatorTest.java,9/d/9dcddedc4218766a59b34887e39d39a4d0664461
-»
-Švaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/validators/annotationvalidator/AnnotationValidatorTest.java,d/1/d130b7697783de26703c962ce2de4eb7e453e280
 •
 evaluetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/util/ConstantUtil.java,f/4/f455ca1f31e3727ffcf0bfcea145f1dd11569d62
 ’
@@ -521,8 +513,6 @@ zvaluetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/
 |valuetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/validators/supervalidator/SuperValidator.java,a/f/afd4607a7be4de510e3992d76724593cff7034a6
 ­
 }valuetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/validators/finalValidators/FinalValidator.java,5/9/596488057f496619e7224001d1e1bcc339a8d982
-µ
-„valuetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/validators/interfaceValidator/InterfaceValidator.java,7/8/78c11055ebb2ec11805d2547c9b868853cb07320
 d
 4valuetypeanalyzer/src/main/resources/application.yml,f/5/f5ee70d295b8f52959be2245ac2c983d56475e78
 L
@@ -589,9 +579,23 @@ lvaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/
 hvaluetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/example/SuperExample.java,a/d/adeb2b287dc4c1c760b3003f8c15478110356413
 §
 wvaluetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/bytecodeexchanger/ValueCapableClass.java,8/7/8751825d82631cce9c303cff0b19cd5c089816b9
- 
-pvaluetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/bytecodeexchanger/Annotation.java,f/d/fd8ac7c51d681423b1f98f928bf5fce81cd2f1cf
 h
 8research/src/main/java/newapi/examples/ArrayExample.java,2/8/28c3da650b865c19b8efe9523c2de7a481708b46
 ¨
 xvaluetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/bytecodeexchanger/ValueTypeExchanger.java,5/9/5935f3825674d176159811b825a78bfb3318310e
+`
+0research/src/main/java/newapi/examples/Main.java,c/f/cf9fe1117201416cc012aecab7c2344b240ecc26
+i
+9research/src/main/java/newapi/examples/LambdaExample.java,9/0/902ea162a53584b1f0ef33bd6d578f009ef9467d
+­
+}valuetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/bytecodeexchanger/ValueTypeAnnotationUtil.java,5/1/5169153cb1176077fe32f6f5ee106b7e120c0043
+d
+4research/src/main/java/newapi/model/ShortReport.java,e/d/ed23f8575317cfa7cbea8bf69c744bee75149663
+•
+evaluetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/model/ShortReport.java,9/0/903b65ba57ae1c5c54e3c9ce8e94d454f051f1f4
+¬
+|valuetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/example/EqualsExampleWithoutEqualsMethod.java,a/4/a445a57e550696bc3fa56033fd7a4abe266acbaa
+¸
+‡valuetypeanalyzer/src/test/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/validators/equalitiyvalidator/EqualityValidatorTest.java,4/7/47acf431e945f0a44adb067048f31dddac09b8e2
+¡
+qvaluetypeanalyzer/src/main/java/com/smagin/valuetypeanalyzer/valuetypeanalyzer/validators/InterfaceValidator.java,4/4/44a9f3e84b20971f0967a0ebcd7f09b204b7bdba

@@ -9,3 +9,4 @@ public class ValuetypeAnalyzerApplication {
          SpringApplication.run(ValuetypeAnalyzerApplication.class, args);
     }
 }
+
