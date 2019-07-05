@@ -61,8 +61,10 @@ typefier/AnnotationOracle.class
 newapi/validators/synchronizevalidator/SynchronizedValidator.class
 oldapi/example11/Example11$Point.class
 oldapi/service/HashCodeValidator.class
+newapi/examples/LayoutOfPoint$Point.class
 oldapi/testheroku/example2/MyPattern.class
 newapi/validators/annotationvalidator/AnnotationValidator.class
+newapi/examples/LayoutOfPoint.class
 newapi/model/Report.class
 oldapi/example10/Example10.class
 newapi/examples/Example0.class
