@@ -4,6 +4,7 @@ import com.smagin.valuetypeanalyzer.valuetypeanalyzer.model.Report;
 import com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.*;
 import com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.api.Validator;
 import com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.equalitiyvalidator.EqualityValidator;
+import com.smagin.valuetypeanalyzer.valuetypeanalyzer.validators.nullValidator.NullValidator;
 import org.objectweb.asm.tree.ClassNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,7 @@ public class AggregateValidator {
     private CloneFinalizeValidator cloneFinalizeValidator;
     private InterfaceValidator interfaceValidator;
     private EqualityValidator equalityValidator;
+    private NullValidator nullValidator;
 
     @Autowired
     public AggregateValidator(FinalValidator finalValidator,
@@ -29,7 +31,8 @@ public class AggregateValidator {
                               AnnotationValidator annotationValidator,
                               CloneFinalizeValidator cloneFinalizeValidator,
                               InterfaceValidator interfaceValidator,
-                              EqualityValidator equalityValidator
+                              EqualityValidator equalityValidator,
+                              NullValidator nullValidator
                                 ) {
         this.finalValidator = finalValidator;
         this.hashCodeValidator = hashCodeValidator;
@@ -38,6 +41,7 @@ public class AggregateValidator {
         this.cloneFinalizeValidator = cloneFinalizeValidator;
         this.interfaceValidator = interfaceValidator;
         this.equalityValidator = equalityValidator;
+        this.nullValidator =  nullValidator;
     }
 
     public void validate(List<ClassNode> classNodes, Map<String, Map<String, Report>> map){
@@ -53,6 +57,7 @@ public class AggregateValidator {
         addToMapResultOfvalidation(classNode, classNodeNameValidatorNameReportMap, cloneFinalizeValidator);
         addToMapResultOfvalidation(classNode, classNodeNameValidatorNameReportMap, interfaceValidator);
         addToMapResultOfvalidation(classNode, classNodeNameValidatorNameReportMap, equalityValidator);
+        addToMapResultOfvalidation(classNode, classNodeNameValidatorNameReportMap, nullValidator);
     }
 
     private void addToMapResultOfvalidation(ClassNode classNode, Map<String, Map<String, Report>> map, Validator validator) {
